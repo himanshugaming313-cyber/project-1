@@ -1,0 +1,30 @@
+{
+  "name": "teen-expense-tracker",
+  "version": "1.0.0",
+  "description": "Production-ready Teenager Expense Tracker with React, Node/Express, Supabase, JWT & bcrypt",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "install:all": "npm.cmd install && npm.cmd --prefix backend install && npm.cmd --prefix frontend install",
+    "dev:backend": "npm.cmd --prefix backend run dev",
+    "dev:frontend": "npm.cmd --prefix frontend run dev",
+    "dev": "concurrently \"npm.cmd --prefix backend run dev\" \"npm.cmd --prefix frontend run dev\"",
+    "start": "npm.cmd --prefix backend start",
+    "build:frontend": "npm.cmd --prefix frontend run build",
+    "test:backend": "npm.cmd --prefix backend test"
+  },
+  "keywords": [
+    "expense-tracker",
+    "teen-budgeting",
+    "react",
+    "express",
+    "supabase",
+    "recharts",
+    "jwt",
+    "bcrypt"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
